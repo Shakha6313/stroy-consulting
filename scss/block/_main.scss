@@ -1,0 +1,34 @@
+.main {
+}
+
+.hero {
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    &__heading {
+        font-family: 'Anglecia Pro Display';
+        font-weight: 400;
+        font-size: 80px;
+        line-height: 96px;
+        text-transform: uppercase;
+        color: #2F2F2F;
+        margin-bottom: 16px;
+        text-align: center;
+    }
+    
+    &__text {
+        font-family: 'Optima Cyr';
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32px;
+        text-align: center;
+        color: #353437;
+        max-width: 848px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    
+}
