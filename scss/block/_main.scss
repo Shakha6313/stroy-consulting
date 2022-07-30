@@ -1,12 +1,9 @@
-.main {
-}
-
 .hero {
     
     display: flex;
     justify-content: center;
     flex-direction: column;
-
+    
     &__heading {
         font-family: 'Anglecia Pro Display';
         font-weight: 400;
@@ -19,16 +16,142 @@
     }
     
     &__text {
-        font-family: 'Optima Cyr';
+        font-family: 'Anglecia Pro Display';
+        font-style: normal;
         font-weight: 400;
-        font-size: 24px;
-        line-height: 32px;
+        font-size: 12px;
+        line-height: 16px;
         text-align: center;
         color: #353437;
-        max-width: 848px;
+        max-width: 309px;
         width: 100%;
-        margin: 0 auto;
+        text-transform: uppercase;
     }
     
+}
+
+.hero {
+    
+    &__slider {
+        display: flex;
+        width: 100%;
+    }
+    
+    &__slider-track {
+        display: flex;
+        align-items: flex-end;
+        width: calc(250px * 20);
+        animation: scroll 40s linear infinite;
+    }
+    
+    &__slider-track:hover{
+        animation-play-state: paused;
+    }
+}
+
+@keyframes scroll{
+    0% {
+        transform: translateX(0);
+    }
+    
+    100%{
+        transform: translateX(calc(-250px * 9));
+    }
+}
+
+.slide {
+    height: auto;
+    width: auto;
+    display: flex;
+    margin: 20px;
+    perspective: 200px;
+}
+
+img{
+    transition: all 0.5s ease;
+}
+
+img:hover{
+    transform: translateZ(20px);
+}
+
+@media only screen and (max-width: 425px){
+    
+    .hero {
+        
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        
+        &__heading {
+            font-weight: 400;
+            font-size: 26px;
+            line-height: 36px;
+            text-align: center;
+            color: #2F2F2F;
+            margin-bottom: 8px;
+        }
+        
+        &__text {
+            font-family: 'Optima Cyr';
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            text-align: center;
+            color: #353437;
+            max-width: 309px;
+            width: 100%;
+            margin: 0 auto;
+        }
+        
+    }
+    
+    .hero {
+        
+        &__slider {
+            display: flex;
+            width: 100%;
+            z-index: -1;
+        }
+        
+        &__slider-track {
+            display: flex;
+            align-items: flex-end;
+            width: calc(250px * 20);
+            animation: scroll 40s linear infinite;
+        }
+        
+        &__slider-track:hover{
+            animation-play-state: paused;
+        }
+    }
+    
+    @keyframes scroll{
+        0% {
+            transform: translateX(0);
+        }
+        
+        100%{
+            transform: translateX(calc(-250px * 9));
+        }
+    }
+    
+    .slide {
+        height: 230px;
+        width: 200px;
+        display: flex;
+        margin: 20px;
+        perspective: 200px;
+    }
+    
+    img{
+        width: 100%;
+        transition: all 0.5s ease;
+        
+    }
+    
+    img:hover{
+        transform: translateZ(20px);
+    }
     
 }

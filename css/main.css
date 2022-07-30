@@ -514,13 +514,136 @@ body {
   text-align: center;
 }
 .hero__text {
-  font-family: "Optima Cyr";
+  font-family: "Anglecia Pro Display";
+  font-style: normal;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 12px;
+  line-height: 16px;
   text-align: center;
   color: #353437;
-  max-width: 848px;
+  max-width: 309px;
   width: 100%;
-  margin: 0 auto;
+  text-transform: uppercase;
+}
+
+.hero__slider {
+  display: flex;
+  width: 100%;
+}
+.hero__slider-track {
+  display: flex;
+  align-items: flex-end;
+  width: 5000px;
+  -webkit-animation: scroll 40s linear infinite;
+          animation: scroll 40s linear infinite;
+}
+.hero__slider-track:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-2250px);
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-2250px);
+  }
+}
+.slide {
+  height: auto;
+  width: auto;
+  display: flex;
+  margin: 20px;
+  perspective: 200px;
+}
+
+img {
+  transition: all 0.5s ease;
+}
+
+img:hover {
+  transform: translateZ(20px);
+}
+
+@media only screen and (max-width: 425px) {
+  .hero {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .hero__heading {
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 36px;
+    text-align: center;
+    color: #2F2F2F;
+    margin-bottom: 8px;
+  }
+  .hero__text {
+    font-family: "Optima Cyr";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: #353437;
+    max-width: 309px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .hero__slider {
+    display: flex;
+    width: 100%;
+    z-index: -1;
+  }
+  .hero__slider-track {
+    display: flex;
+    align-items: flex-end;
+    width: 5000px;
+    -webkit-animation: scroll 40s linear infinite;
+            animation: scroll 40s linear infinite;
+  }
+  .hero__slider-track:hover {
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
+  }
+  @-webkit-keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-2250px);
+    }
+  }
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-2250px);
+    }
+  }
+  .slide {
+    height: 230px;
+    width: 200px;
+    display: flex;
+    margin: 20px;
+    perspective: 200px;
+  }
+  img {
+    width: 100%;
+    transition: all 0.5s ease;
+  }
+  img:hover {
+    transform: translateZ(20px);
+  }
 }/*# sourceMappingURL=main.css.map */
