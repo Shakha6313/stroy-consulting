@@ -3,6 +3,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-bottom: 200px;    
     
     &__heading {
         font-family: 'Anglecia Pro Display';
@@ -13,19 +14,21 @@
         color: #2F2F2F;
         margin-bottom: 16px;
         text-align: center;
+        margin: 0 auto;
     }
     
     &__text {
         font-family: 'Anglecia Pro Display';
         font-style: normal;
         font-weight: 400;
-        font-size: 12px;
-        line-height: 16px;
+        font-size: 24px;
+        line-height: 32px;
         text-align: center;
         color: #353437;
-        max-width: 309px;
+        max-width: 848px;
         width: 100%;
         text-transform: uppercase;
+        margin: 0 auto;
     }
     
 }
@@ -109,11 +112,11 @@ img:hover{
     .hero {
         
         &__slider {
-            overflow-x: hidden;
             display: flex;
             max-width: 425px;
             width: 100%;
             z-index: -1;
+            overflow-x: hidden;
         }
         
         &__slider-track {
@@ -154,6 +157,128 @@ img:hover{
     
     .slide img:hover{
         transform: translateZ(20px);
+    }
+    
+}
+
+
+.services {
+    
+    margin-bottom: 203px;
+
+    &__heading {
+        font-family: 'Anglecia Pro Display';
+        font-weight: 400;
+        font-size: 55px;
+        line-height: 70px;
+        text-align: center;
+        color: #2F2F2F;
+        margin: 0 auto;
+        max-width: 1039px;
+        width: 100%;
+        margin-bottom: 80px;
+    }
+    
+    &__card {
+        max-width: 464px;
+        width: 100%;
+        display: flex;
+        gap: 40px;
+    }
+    
+    &__card-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        list-style-type: none;
+    }
+    
+    &__header {
+        font-family: 'Anglecia Pro Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 64px;
+        color: #202020;
+        margin: 0 auto;
+        margin-bottom: 24px;
+    }
+    
+    &__pic {
+        width: 444px;
+        height: 570px;
+        margin-bottom: 24px;
+    }
+    
+    &__info {
+        font-family: 'Anek Devanagari';
+        font-size: 22px;
+        line-height: 32px;
+        text-align: center;
+        color: #9C9C9C;
+        width: 390px;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    
+    .services {
+        
+        &__heading {
+            font-family: 'Anglecia Pro Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 26px;
+            line-height: 36px;
+            text-align: center;
+            color: #2F2F2F;
+            max-width: 295px;
+            width: 100%;
+            margin-bottom: 66px;
+        }
+        
+        &__card {
+            max-width: 404px;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        &__card-list {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            list-style-type: none;
+        }
+        
+        &__header {
+            font-family: 'Anglecia Pro Display';
+            font-size: 32px;
+            line-height: 32px;
+            color: #2F2F2F;
+            margin: 0 auto;
+            margin-bottom: 24px;
+        }
+        
+        &__pic {
+            width: 384px;
+            height: 412px;
+            margin-bottom: 14px;
+        }
+        
+        &__info {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            text-align: center;
+            color: #9C9C9C;
+            
+            width: 282px;
+            margin: 0 auto;
+        }
     }
     
 }
