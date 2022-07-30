@@ -1,6 +1,6 @@
 .header {
     margin-top: 32px;
-
+    
     &__logo{
         margin-left: -100px;
     }
@@ -11,6 +11,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    
     
     &__list {
         display: flex;
@@ -49,9 +51,92 @@
     }
 }
 
-@media only screen and (max-width: 425px) {
-    /*  */
+.burger{
+    display: none;
+}
 
+
+@media only screen and (max-width: 425px) {
+    .header {
+        padding-top: 45px;
+        padding-bottom: 43px;
+        margin-top: 0;
+        
+        &__logo{
+            margin-left: 0;
+            background: #FFFFFF;
+        }
+    }
     
+    .nav {
+        position: relative;
+        
+        
+        &__list {
+            display: none;
+            align-items: flex-start;
+            position: absolute;
+            top: 100px;
+            left: 0;
+            flex-direction: column;
+            
+        }
+        
+        &__call {
+            position: absolute;
+            display: none;
+            gap: 8px;
+            top: 300px;
+        }
+        .nav__call-active{
+            position: absolute;
+            display: flex;
+            gap: 8px;
+            top: 350px;
+        }
+        
+        &__call-num {
+            font-family: 'Inter';
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            text-align: center;
+            color: #020105;
+            text-decoration: none;
+        }
+        
+        .active {
+            display: flex;
+            background: #F5F5F5;
+            box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.25);
+            margin-left: -20px;
+            padding-left: 20px;
+            padding-top: 30px;
+            padding-bottom: 190px;
+            width: 428px;
+        }
+    }
+    
+    
+    .burger{
+        background-image: url(./../../img/burger-menu.svg);
+        background-color: #FFFFFF;
+        background-size: cover;
+        display: block;
+        width: 15px;
+        height: 15px;
+        border: none;
+        outline: none;
+    }
+    
+    .burger__active{
+        background-image: url(./../../img/cross-quit.svg);
+        background-size: cover;
+        display: block;
+        width: 15px;
+        height: 15px;
+        border: none;
+        outline: none;
+    }
     
 }
