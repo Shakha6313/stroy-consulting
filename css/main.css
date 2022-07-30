@@ -639,11 +639,11 @@ img:hover {
     margin: 20px;
     perspective: 200px;
   }
-  img {
+  .slide img {
     width: 100%;
     transition: all 0.5s ease;
   }
-  img:hover {
+  .slide img:hover {
     transform: translateZ(20px);
   }
 }/*# sourceMappingURL=main.css.map */
