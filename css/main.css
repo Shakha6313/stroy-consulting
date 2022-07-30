@@ -601,7 +601,9 @@ img:hover {
     margin: 0 auto;
   }
   .hero__slider {
+    overflow-x: hidden;
     display: flex;
+    max-width: 425px;
     width: 100%;
     z-index: -1;
   }

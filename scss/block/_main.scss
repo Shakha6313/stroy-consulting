@@ -109,7 +109,9 @@ img:hover{
     .hero {
         
         &__slider {
+            overflow-x: hidden;
             display: flex;
+            max-width: 425px;
             width: 100%;
             z-index: -1;
         }
