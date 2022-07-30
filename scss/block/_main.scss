@@ -262,7 +262,8 @@ img:hover{
         }
         
         &__pic {
-            width: 384px;
+            max-width: 384px;
+            width: 100%;
             height: 412px;
             margin-bottom: 14px;
         }
