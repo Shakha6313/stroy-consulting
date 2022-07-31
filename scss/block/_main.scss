@@ -402,3 +402,122 @@ img:hover{
     }
     
 }
+
+.collection {
+    
+    margin-bottom: 350px;
+    
+    &__heading {
+        font-family: 'Anglecia Pro Display';
+        font-weight: 400;
+        font-size: 55px;
+        line-height: 70px;
+        text-align: center;
+        color: #2F2F2F;
+        max-width: 1300px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+    
+    &__slider {
+        display: flex;
+        width: 100%;
+    }
+    
+    &__slider-track {
+        display: flex;
+        align-items: flex-start;
+        width: calc(250px * 50);
+        animation: scroll 40s linear infinite;
+        
+        &:hover{
+            animation-play-state: paused;
+        }
+    }
+    
+    &__slider-track .slide{
+        height: auto;
+        width: auto;
+        display: flex;
+        margin: 20px;
+        perspective: 300px;
+    }
+    
+    @keyframes scroll{
+        0% {
+            transform: translateX(0);
+        }
+        
+        100%{
+            transform: translateX(calc(-250px * 9));
+        }
+    }
+}
+
+@media only screen and (max-width: 425px){
+    
+    .collection {
+        
+        margin-bottom: 350px;
+        
+        &__heading {
+            font-family: 'Anglecia Pro Display';
+            font-weight: 400;
+            font-size: 26px;
+            line-height: 36px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #2F2F2F;
+            max-width: 382px;
+            width: 100%;
+            margin: 0 auto;
+            margin-bottom: 17px;
+        }
+        
+        &__slider {
+            display: flex;
+            width: 100%;
+            height: 350px;
+        }
+        
+        &__slider-track {
+            display: flex;
+            align-items: flex-start;
+            width: calc(250px * 50);
+            animation: scroll 40s linear infinite;
+            
+            &:hover{
+                animation-play-state: paused;
+            }
+        }
+        
+        &__slider-track .slide{
+            height: auto;
+            width: auto;
+            display: flex;
+            margin: 20px;
+            perspective: 300px;
+        }
+        
+        @keyframes scroll{
+            0% {
+                transform: translateX(0);
+            }
+            
+            100%{
+                transform: translateX(calc(-250px * 9));
+            }
+        }
+    }
+
+    .slide img{
+        width: 450px;
+        height: 350px;
+
+    }
+    
+}
+
+
+

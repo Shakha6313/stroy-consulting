@@ -856,4 +856,111 @@ img:hover {
     height: 368px;
     margin-bottom: 38px;
   }
+}
+.collection {
+  margin-bottom: 350px;
+}
+.collection__heading {
+  font-family: "Anglecia Pro Display";
+  font-weight: 400;
+  font-size: 55px;
+  line-height: 70px;
+  text-align: center;
+  color: #2F2F2F;
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+.collection__slider {
+  display: flex;
+  width: 100%;
+}
+.collection__slider-track {
+  display: flex;
+  align-items: flex-start;
+  width: 12500px;
+  -webkit-animation: scroll 40s linear infinite;
+          animation: scroll 40s linear infinite;
+}
+.collection__slider-track:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+.collection__slider-track .slide {
+  height: auto;
+  width: auto;
+  display: flex;
+  margin: 20px;
+  perspective: 300px;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-2250px);
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .collection {
+    margin-bottom: 350px;
+  }
+  .collection__heading {
+    font-family: "Anglecia Pro Display";
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #2F2F2F;
+    max-width: 382px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 17px;
+  }
+  .collection__slider {
+    display: flex;
+    width: 100%;
+    height: 350px;
+  }
+  .collection__slider-track {
+    display: flex;
+    align-items: flex-start;
+    width: 12500px;
+    -webkit-animation: scroll 40s linear infinite;
+            animation: scroll 40s linear infinite;
+  }
+  .collection__slider-track:hover {
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
+  }
+  .collection__slider-track .slide {
+    height: auto;
+    width: auto;
+    display: flex;
+    margin: 20px;
+    perspective: 300px;
+  }
+  @-webkit-keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-2250px);
+    }
+  }
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-2250px);
+    }
+  }
+  .slide img {
+    width: 450px;
+    height: 350px;
+  }
 }/*# sourceMappingURL=main.css.map */
