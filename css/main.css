@@ -835,6 +835,7 @@ img:hover {
   }
   .statistics__list-heading {
     font-family: "Anglecia Pro Display";
+    font-style: normal;
     font-weight: 400;
     font-size: 60px;
     line-height: 60px;
