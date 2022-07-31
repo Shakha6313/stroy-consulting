@@ -663,3 +663,106 @@ img:hover{
     }
     
 }
+
+.articles {
+    
+    margin-bottom: 100px;
+
+    &__heading {
+        font-family: 'Anglecia Pro Display';
+        font-weight: 400;
+        font-size: 55px;
+        line-height: 70px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #2F2F2F;
+        margin-bottom: 40px;
+        max-width: 992px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    &__list {
+        display: flex;
+        margin-left: 20px;
+    }
+    
+    &__list-item {
+        list-style-type: none;
+
+    }
+    
+    &__item-link {
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 520px;
+        width: 100%;
+        background: #F5F5F5;
+        padding-bottom: 42px;
+    }
+    
+    &__list-img {
+        width: 430px;
+        height: 454px;
+        margin-bottom: 24px;
+    }
+    
+    &__list-time {
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 20px;
+        color: #9C9C9C;
+        position: relative;
+        margin-bottom: 15px;
+        
+        &::before{
+            content: url(./../../img/clock.svg);
+            position: absolute;
+            top: 0;
+            left: -25px;
+            
+        }
+        
+    }
+    
+    &__list-text {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;
+        text-align: center;
+        color: #2F2F2F;
+        max-width: 406px;
+        width: 100%;
+    }
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+}
+
