@@ -905,6 +905,7 @@ img:hover {
 
 @media only screen and (max-width: 425px) {
   .collection {
+    overflow: hidden;
     margin-bottom: 350px;
   }
   .collection__heading {
@@ -959,8 +960,8 @@ img:hover {
       transform: translateX(-2250px);
     }
   }
-  .slide img {
+  .collection__slider-track .slide img {
     width: 450px;
-    height: 350px;
+    height: auto;
   }
 }/*# sourceMappingURL=main.css.map */

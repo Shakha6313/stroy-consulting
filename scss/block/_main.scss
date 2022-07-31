@@ -459,6 +459,7 @@ img:hover{
     
     .collection {
         
+        overflow: hidden;
         margin-bottom: 350px;
         
         &__heading {
@@ -511,9 +512,9 @@ img:hover{
         }
     }
 
-    .slide img{
+    .collection__slider-track .slide img{
         width: 450px;
-        height: 350px;
+        height: auto
 
     }
     
