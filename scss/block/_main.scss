@@ -165,7 +165,7 @@ img:hover{
 .services {
     
     margin-bottom: 203px;
-
+    
     &__heading {
         font-family: 'Anglecia Pro Display';
         font-weight: 400;
@@ -225,6 +225,8 @@ img:hover{
     
     .services {
         
+        margin-bottom: 127px;
+        
         &__heading {
             font-family: 'Anglecia Pro Display';
             font-style: normal;
@@ -272,7 +274,7 @@ img:hover{
             width: 100%;
             margin-bottom: 14px;
         }
-
+        
         &__pic3 {
             max-width: 368px;
             width: 100%;
@@ -288,6 +290,112 @@ img:hover{
             color: #9C9C9C;
             width: 282px;
             margin: 0 auto;
+        }
+    }
+    
+}
+
+.statistics {
+    
+    margin-bottom: 205px;
+    
+    &__heading {
+        font-family: 'Anglecia Pro Display';
+        font-weight: 400;
+        font-size: 55px;
+        line-height: 70px;
+        text-align: center;
+        color: #2F2F2F;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+    
+    &__card {
+        display: flex;
+        text-align: center;
+        gap: 40px;
+    }
+    
+    &__card-list {
+        list-style-type: none;
+    }
+    
+    &__list-heading {
+        font-family: 'Anglecia Pro Display';
+        font-weight: 400;
+        font-size: 200px;
+        line-height: 200px;
+        color: #2F2F2F;
+        margin-bottom: 16px;
+    }
+    
+    &__list-text {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 31px;
+        color: #9C9C9C;
+        margin-bottom: 38px;
+    }
+    
+    &__list-img {
+        width: 544px;
+        height: 529px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    
+    .statistics {
+        
+        margin-bottom: 205px;
+        
+        &__heading {
+            font-family: 'Anglecia Pro Display';
+            font-weight: 400;
+            font-size: 26px;
+            line-height: 36px;
+            text-align: center;
+            color: #2F2F2F;
+            margin: 0 auto;
+            margin-bottom: 68px;
+        }
+        
+        &__card {
+            display: flex;
+            text-align: center;
+            flex-wrap: wrap;
+            gap: 112px;
+        }
+        
+        &__card-list {
+            list-style-type: none;
+        }
+        
+        &__list-heading {
+            font-family: 'Anglecia Pro Display';
+            font-weight: 400;
+            font-size: 60px;
+            line-height: 60px;
+            color: #2F2F2F;
+            margin-bottom: 4px;
+        }
+        
+        &__list-text {
+            font-family: 'Inter';
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+            color: #9C9C9C;
+            margin-bottom: 20px;
+        }
+        
+        &__list-img {
+            max-width: 384px;
+            width: 100%;
+            height: 368px;
+            margin-bottom: 38px;
         }
     }
     
