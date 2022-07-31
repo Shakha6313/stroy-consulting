@@ -327,6 +327,7 @@ h1, h2, h3, h4, h5, h6 p {
 
 body {
   overflow-x: hidden;
+  position: relative;
 }
 
 /* inter-regular - latin */
@@ -406,6 +407,9 @@ body {
   text-decoration: none;
   color: #020105;
 }
+.nav__list-link:hover {
+  color: #FFDA79;
+}
 .nav__call {
   display: flex;
   align-items: center;
@@ -419,6 +423,9 @@ body {
   text-align: center;
   color: #020105;
   text-decoration: none;
+}
+.nav__call-num:hover {
+  color: #FFDA79;
 }
 
 .burger {
@@ -963,5 +970,126 @@ img:hover {
   .collection__slider-track .slide img {
     width: 450px;
     height: auto;
+  }
+}
+.about__info {
+  background: #FFDA79;
+  padding-top: 152px;
+  padding-bottom: 152px;
+  padding-left: 104px;
+  width: 1240px;
+  position: relative;
+  margin-bottom: 200px;
+}
+.about__info::before {
+  content: url(../../img/mirobo3.png);
+  position: absolute;
+  top: -72px;
+  left: 824px;
+}
+.about__info-heading {
+  font-family: "Anglecia Pro Display";
+  font-weight: 400;
+  font-size: 55px;
+  line-height: 60px;
+  color: #2F2F2F;
+  max-width: 400px;
+  width: 100%;
+  margin-bottom: 8px;
+}
+.about__info-text {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #202020;
+  width: 600px;
+  margin-bottom: 54px;
+}
+.about__info-link {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 32px;
+  color: #FFDA79;
+  text-decoration: none;
+  background: #2F2F2F;
+  padding: 16px 64px 16px 24px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.about__info-link::before {
+  content: url(./../../img/arrow-btn.svg);
+  top: 25%;
+  left: 75%;
+  position: absolute;
+}
+.about__info-link:active {
+  opacity: 0.8;
+}
+
+@media only screen and (max-width: 425px) {
+  .about__info {
+    background: #FFDA79;
+    padding-top: 150px;
+    padding-bottom: 32px;
+    padding-left: 20px;
+    width: 428px;
+    position: relative;
+    margin-bottom: 100px;
+  }
+  .about__info::before {
+    content: url(../../img/mirobo3-res.png);
+    max-width: 425px;
+    width: 100%;
+    height: 325px;
+    background-size: cover;
+    position: absolute;
+    top: -196px;
+    left: 0px;
+  }
+  .about__info-heading {
+    font-family: "Anglecia Pro Display";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #2F2F2F;
+    max-width: 245px;
+    width: 100%;
+    margin-bottom: 4px;
+  }
+  .about__info-text {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #707070;
+    max-width: 316px;
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  .about__info-link {
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 32px;
+    color: #FFDA79;
+    text-decoration: none;
+    background: #2F2F2F;
+    padding: 16px 48px 16px 20px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .about__info-link::before {
+    content: url(./../../img/arrow-btn.svg);
+    top: 25%;
+    left: 80%;
+    position: absolute;
+  }
+  .about__info-link:active {
+    opacity: 0.8;
   }
 }/*# sourceMappingURL=main.css.map */
