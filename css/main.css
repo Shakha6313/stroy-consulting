@@ -330,6 +330,10 @@ body {
   position: relative;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 /* inter-regular - latin */
 @font-face {
   font-family: "Inter";
@@ -1310,6 +1314,7 @@ img:hover {
 @media only screen and (max-width: 425px) {
   .contact {
     margin-bottom: 100px;
+    overflow: hidden;
   }
   .contact__heading {
     font-family: "Anglecia Pro Display";
