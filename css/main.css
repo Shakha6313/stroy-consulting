@@ -1636,6 +1636,7 @@ img:hover {
   font-size: 48px;
   line-height: 48px;
   color: #9C9C9C;
+  z-index: -1;
 }
 .main__hero-buttons input:checked {
   background: #FFDA79;
@@ -1860,7 +1861,6 @@ img:hover {
     margin-top: 200px;
     position: relative;
     overflow: hidden;
-    margin-bottom: 60px;
     z-index: 0;
   }
   .location__heading {
