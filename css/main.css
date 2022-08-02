@@ -1837,6 +1837,9 @@ img:hover {
     width: 100%;
   }
 }
+.location {
+  margin-bottom: 80px;
+}
 .location__heading {
   font-family: "Inter";
   font-style: normal;
@@ -1862,6 +1865,7 @@ img:hover {
 @media only screen and (max-width: 425px) {
   .location {
     margin-top: 200px;
+    margin-bottom: 61px;
     position: relative;
     overflow: hidden;
     z-index: 0;
