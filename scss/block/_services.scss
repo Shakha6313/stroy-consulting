@@ -1,0 +1,164 @@
+.main {
+    
+    &__top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 200px;
+    }
+    
+    &__top-header {
+        font-family: 'Anglecia Pro Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 65px;
+        line-height: 75px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #2F2F2F;
+        max-width: 1030px;
+        width: 100%;
+        margin-bottom: 16px;
+    }
+    
+    &__top-text {
+        font-family: 'Anglecia Pro Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 24px;
+        color: #353437;
+    }
+    
+    &__hero-radio{
+        width: 200px;
+        height: 200px;
+        border-radius: unset;
+    }
+    
+}
+
+@media only screen and (max-width: 425px){
+    
+    .main {
+        
+        &__top {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 64px;
+        }
+        
+        &__top-header {
+            font-family: 'Anglecia Pro Display';
+            font-weight: 400;
+            font-size: 26px;
+            line-height: 36px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #2F2F2F;
+            max-width: 338px;
+            width: 100%;
+            margin-bottom: 8px;
+        }
+        
+        &__top-text {
+            font-family: 'Anglecia Pro Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 12px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #353437;
+        }
+        
+    }
+    
+}
+
+
+.main {
+    
+    &__hero {
+    }
+    
+    &__hero-buttons {
+        position: relative;
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    &__hero-buttons input{
+        appearance: none;
+        cursor: pointer;
+        padding: 28px 64px;
+        background: #fff;
+        transition: all 0.1s;
+        box-shadow: 0 0 0 1px #9C9C9C;
+        font-family: 'Anglecia Pro Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 48px;
+        color: #9C9C9C;
+        
+        &:checked{
+            background: #FFDA79;
+            color: #202020;
+        }
+        
+        &::before{
+            content: attr(value);
+            text-align: center;
+        }
+    }
+}
+
+@media only screen and (max-width: 425px){
+    
+    .main {
+        
+        &__hero {
+        }
+        
+        &__hero-buttons {
+            position: relative;
+            margin-bottom: 40px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        &__hero-buttons input{
+            appearance: none;
+            cursor: pointer;
+            padding: 12px 16px;
+            background: #fff;
+            transition: all 0.1s;
+            box-shadow: 0 0 0 1px #9C9C9C;
+            font-family: 'Anglecia Pro Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 14px;
+            color: #9C9C9C;
+            text-align: center;
+            
+            &:checked{
+                background: #FFDA79;
+                color: #202020;
+            }
+            
+            &::before{
+                content: attr(value);
+                text-align: center;
+            }
+        }
+    }
+    
+}
