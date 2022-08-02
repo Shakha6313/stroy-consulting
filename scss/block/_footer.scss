@@ -123,7 +123,8 @@
         
         &__list {
             display: flex;
-            gap: 96px;
+            gap: 50px;
+            margin: 0 auto;
         }
         
         &__item {
@@ -144,9 +145,16 @@
                 content: url(../../img/facebook.svg);
                 position: absolute;
                 top: 0;
-                left: -20px;
+                left: -18px;
             }
     
+            &::after{
+                content: url(../../img/span-arrow.svg);
+                position: absolute;
+                top: -5px;
+                right: -35px;
+                display: none;
+            }
         }
     
         &__link2 {
@@ -163,7 +171,15 @@
                 content: url(../../img/insta.svg);
                 position: absolute;
                 top: 0;
-                left: -30px;
+                left: -25px;
+            }
+
+            &::after{
+                content: url(../../img/span-arrow.svg);
+                position: absolute;
+                top: -5px;
+                right: -35px;
+                display: none;
             }
     
         }
@@ -182,7 +198,7 @@
                 content: url(../../img/tg.svg);
                 position: absolute;
                 top: 0;
-                left: -30px;
+                left: -25px;
             }
         }
     }

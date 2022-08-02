@@ -1473,7 +1473,8 @@ img:hover {
   }
   .footer__list {
     display: flex;
-    gap: 96px;
+    gap: 50px;
+    margin: 0 auto;
   }
   .footer__item {
     list-style-type: none;
@@ -1492,7 +1493,14 @@ img:hover {
     content: url(../../img/facebook.svg);
     position: absolute;
     top: 0;
-    left: -20px;
+    left: -18px;
+  }
+  .footer__link1::after {
+    content: url(../../img/span-arrow.svg);
+    position: absolute;
+    top: -5px;
+    right: -35px;
+    display: none;
   }
   .footer__link2 {
     text-decoration: none;
@@ -1508,7 +1516,14 @@ img:hover {
     content: url(../../img/insta.svg);
     position: absolute;
     top: 0;
-    left: -30px;
+    left: -25px;
+  }
+  .footer__link2::after {
+    content: url(../../img/span-arrow.svg);
+    position: absolute;
+    top: -5px;
+    right: -35px;
+    display: none;
   }
   .footer__link3 {
     text-decoration: none;
@@ -1524,6 +1539,6 @@ img:hover {
     content: url(../../img/tg.svg);
     position: absolute;
     top: 0;
-    left: -30px;
+    left: -25px;
   }
 }/*# sourceMappingURL=main.css.map */
