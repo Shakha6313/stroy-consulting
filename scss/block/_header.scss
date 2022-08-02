@@ -9,7 +9,7 @@
 }
 
 .nav {
-    
+    z-index: 999;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -72,6 +72,7 @@
         padding-bottom: 43px;
         margin-top: 0;
         z-index: 1;
+        z-index: 999;
         
         &__logo{
             margin-left: 0;
@@ -81,7 +82,7 @@
     
     .nav {
         position: relative;
-        
+        z-index: 999;
         
         &__list {
             display: none;
