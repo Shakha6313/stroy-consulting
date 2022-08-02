@@ -1646,7 +1646,6 @@ img:hover {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
     gap: 10px;
   }
   .main__hero-buttons input {
@@ -1665,6 +1664,8 @@ img:hover {
     line-height: 14px;
     color: #9C9C9C;
     text-align: center;
+    display: flex;
+    align-items: center;
   }
   .main__hero-buttons input:checked {
     background: #FFDA79;
