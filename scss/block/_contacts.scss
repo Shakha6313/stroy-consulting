@@ -103,8 +103,11 @@
     
     .location {
         
+        margin-top: 200px;
         position: relative;
         overflow: hidden;
+        margin-bottom: 60px;
+        z-index: 0;
 
         &__heading {
             font-family: 'Inter';
